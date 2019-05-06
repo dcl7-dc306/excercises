@@ -59,11 +59,11 @@
         </div>
         <a href="#" class="prev"></a><a href="#" class="next"></a> </div>
       <ul class="menu">
-        <li class="current"><a href="index.html" class="clr-1">Home</a></li>
-        <li><a href="about.html" class="clr-2">About</a></li>
-        <li><a href="schedule.html" class="clr-3">Schedule</a></li>
-        <li><a href="gallery.html" class="clr-4">Gallery</a></li>
-        <li><a href="contacts.html" class="clr-5">Contacts</a></li>
+        <li class="current"><a href="index.aspx" class="clr-1">Home</a></li>
+        <li><a href="about.aspx" class="clr-2">About</a></li>
+        <li><a href="schedule.aspx" class="clr-3">Schedule</a></li>
+        <li><a href="gallery.aspx" class="clr-4">Gallery</a></li>
+        <li><a href="contacts.aspx" class="clr-5">Contacts</a></li>
       </ul>
     </nav>
   </header>
@@ -71,14 +71,12 @@
   <section id="content">
     <div class="container_12">
       <div class="grid_4 bot-1">
-        <div class="art"></div>
-        <h2 class="top-1 p2">Events</h2>
-		<asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+		<asp:ContentPlaceHolder ID="LeftContent" runat="server">
         </asp:ContentPlaceHolder>
 		 <!--comment-->
         </div>
       <div class="grid_8">
-		<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+		<asp:ContentPlaceHolder ID="PageContent" runat="server">
         </asp:ContentPlaceHolder>
         <!--==============================footer=================================-->
         <footer>
@@ -90,10 +88,5 @@
     </div>
   </section>
 </div>
-    <form id="form1" runat="server">
-        <div>
-            
-        </div>
-    </form>
 </body>
 </html>
