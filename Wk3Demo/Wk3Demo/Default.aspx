@@ -19,6 +19,9 @@
                 <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
             </p>
         </div>
+        <asp:TextBox ID="TextBox1" runat="server" TextMode="MultiLine"></asp:TextBox>
+        <asp:Label runat="server" CssClass="control-label" AssociatedControlID="txtField">Caption</asp:Label>
+        <asp:TextBox runat="server" ID="txtField" CssClass="form-control" />
         <div class="col-md-4">
             <h2>Get more libraries</h2>
             <p>
