@@ -2,48 +2,38 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="PageContent" runat="server">
-    <div class="block-1 top-5">
+<div class="block-1 top-5">
     <div class="block-1-shadow">
     <h2 class="clr-6">Contact Form</h2>
     <form id="form" runat="server">
-        <%--<asp:Label id="" runat="server"><strong>Name:</strong>
-            <input id="txtName" type="text" value="">
-            <strong class="clear"></strong></asp:Label>
-        <asp:Label id="lblEmail"><strong>Email:</strong>
-            <input id="txtEmail" type="text" value="">
-            <strong class="clear"></strong></asp:Label>
-        <asp:Label id="lblPhone"><strong>Phone:</strong>
-            <input id="txtPhone" type="text" value="">
-            <strong class="clear"></strong></asp:Label>
-        <asp:Label id="lblMessage"><strong>Message:</strong>
-            <textarea id="txtMessage"></textarea>
-            <strong class="clear"></strong></asp:Label>
-        <strong class="clear"></strong>
-        <div class="btns pad-2"><a href="#" class="link-2">Clear</a><a href="#" class="link-2">Send</a></div>--%>
-        <asp:Label ID="lblStatus" runat="server" Text="Status"></asp:Label><br/>
+
+        <asp:Label ID="lblStatus" runat="server" Text=""></asp:Label><br/>
 
         <div class="clear"></div>
-        <asp:Label ID="lblName" runat="server" Text="Name:">
-            <asp:TextBox ID="txtName" runat="server"></asp:TextBox> <br/>
-        </asp:Label>
+        <asp:Label ID="lblName" runat="server" Text="Name:" AssociatedControlID="txtName">  </asp:Label>
+        <asp:TextBox ID="txtName" runat="server"></asp:TextBox> <br/>
+      
 
         <div class="clear"></div>
-        <asp:Label ID="lblEmail" runat="server" Text="Email">
-           <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-        </asp:Label>
+        <asp:Label ID="lblEmail" runat="server" Text="Email" AssociatedControlID="txtEmail"></asp:Label>
+        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+        
     
         <div class="clear"></div>    
-        <asp:Label ID="lblPhone" runat="server" Text="Phone">
-            <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox>
-        </asp:Label>
+        <asp:Label ID="lblPhone" runat="server" Text="Phone" AssociatedControlID="txtPhone"></asp:Label>
+        <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox>
+        
 
         <div class="clear"></div>
-        <asp:Label ID="lblMessage" runat="server" Text="Message">
-            <asp:TextBox ID="txtMessage" runat="server"></asp:TextBox>
-        </asp:Label>
+        <asp:Label ID="lblMessage" runat="server" Text="Message" AssociatedControlID="txtMessage"></asp:Label>
+        <asp:TextBox ID="txtMessage" TextMode="MultiLine" runat="server"></asp:TextBox>
+        
 
         <div class="clear"></div>
-        <asp:Button ID="btnSubmit" CssClass="btns pad-2" runat="server" Text="Submit" OnClick="btnSubmit_Click" /> <br/>
+        <div class="btns pad-2">
+           <asp:Button ID="btnSubmit" CssClass="link-2" runat="server" Text="Submit" OnClick="btnSubmit_Click" /> <br/>
+        </div>
+
     </form>
     </div>
 </div>

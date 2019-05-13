@@ -119,6 +119,8 @@
     <Content Include="js\PIE.htc" />
     <Content Include="js\tms-0.4.1.js" />
     <Content Include="js\uCarousel.js" />
+    <Content Include="schedule.aspx" />
+    <Content Include="UpdateSchedule.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +153,20 @@
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="schedule.aspx.cs">
+      <DependentUpon>schedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="schedule.aspx.designer.cs">
+      <DependentUpon>schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSchedule.aspx.cs">
+      <DependentUpon>UpdateSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateSchedule.aspx.designer.cs">
+      <DependentUpon>UpdateSchedule.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Main.Master" />

@@ -76,8 +76,10 @@
 		 <!--comment-->
         </div>
       <div class="grid_8">
+          <form runat="server">
 		<asp:ContentPlaceHolder ID="PageContent" runat="server">
         </asp:ContentPlaceHolder>
+              </form>
         <!--==============================footer=================================-->
         <footer>
           <p>© 2012 Art School</p>
